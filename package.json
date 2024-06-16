@@ -1,0 +1,22 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "watch": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liasyan/test-api"
+  },
+  "author": "Lia  Sahakyan",
+  "license": "ISC",
+  "description": "Test task for JavaScript developer",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "latest": "^0.2.0"
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Example</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+<h2>history</h2>
+<table>
+    <thead>
+    <tr>
+        <th>deal_name</th>
+        <th>budget</th>
+        <th>status</th>
+        <th>user name</th>
+        <th>date created</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% for (let i = 0; i < data.length; i++) { %>
+        <tr>
+            <td><%= data[i].deal_name %></td>
+            <td><%= data[i].budget %></td>
+            <td><%= data[i].status %></td>
+            <td><%= data[i].user_name %></td>
+            <td><%= data[i].date_created %></td>
+        </tr>
+    <% } %>
+    </tbody>
+</table>
+</body>
+</html>
